@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krists Ziders Profile</title>
+    <link rel="stylesheet" href="kristsziders.css">
+</head>
+
+<body>
+
+    <div class="bg">
+        <button class="other_button"> <a href="./kristsziders.html">Back</a></button>
+        <img class="profile_img" src="./profile.png">
+    </div>
+
+    <section class="countdown">
+        <div class="bahrain">
+            <table class="countdown_container">
+                <tr class="info">
+                    <td colspan="4">RROTAX MAX CHALLENGE GRAND FINALS 2021</td>
+                </tr>
+                <tr class="info">
+                    <td id="days">61</td>
+                    <td id="hours">4</td>
+                    <td id="minutes">17</td>
+
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>Hours</td>
+                    <td>Minutes</td>
+
+                </tr>
+            </table>
+            <script type="text/javascript">
+                function countdown() {
+                    var now = new Date();
+                    var eventDate = new Date(2021, 12, 11);
+
+                    var currentTime = now.getTime();
+                    var eventTime = eventDate.getTime();
+
+                    var remTime = eventTime - currentTime;
+
+                    var s = Math.floor(remTime / 1000);
+                    var m = Math.floor(s / 60);
+                    var h = Math.floor(m / 60);
+                    var d = Math.floor(h / 24);
+
+                    h %= 24;
+                    m %= 60;
+                    s %= 60;
+
+                    h = (h < 10) ? "0" + h : h;
+                    m = (m < 10) ? "0" + m : m;
+                    s = (s < 10) ? "0" + s : s;
+
+                    document.getElementById("days").textContent = d;
+                    document.getElementById("days").innerText = d;
+
+                    document.getElementById("hours").textContent = h;
+                    document.getElementById("minutes").textContent = m;
+                    document.getElementById("seconds").textContent = s;
+
+                    setTimout(countdown, 1000);
+                }
+
+                countdown();
+            </script>
+        </div>
+    </section>
+    <div class="profile">
+        <div class="about">
+            <p>NAME SURNAME: Krists Ziders<br>
+                AGE: 18<br>
+                NATIONALITY: Latvian<br>
+                WEIGHT: 75kg<br>
+                HEIGHT: 175cm<br>
+                QUOTE: "You have to be very calm and keep your focus, but never forget to take an advantage and show a
+                little bit of aggression to keep those enemies impssioned"</p>
+        </div>
+
+        <div class="about">
+            <p>Krists Ziders is a young driver, who started his karting career at the age of 10. By going to summer
+                camps
+                in 333 autosport track, he fell in love with speed, racing and karting community. Later on he was
+                invited to
+                become one of "333 Autosport" team members and began his career in Rotax MiniMax Class. With time he
+                became
+                more skilled and quicly moved up to Junior Class, competed with best f Baltic and Russian drivers until
+                he
+                was ready and grown up enough to join one of the fastest and most dangerous of classes - Rotax Max DD2.
+                This
+                opportunity made Krists enter the Europian level races and championships in tracks like Le Mans
+                (France),
+                Genk: Home Of Champions (Belgium), Campillos (Italy) and other significant tracks in Spain, Portugal,
+                Hungary etc.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
